@@ -2015,7 +2015,7 @@ class Game:
                 self.player.perform_beam_attack(mouse_pos, self.enemy_group, game=self)
             elif attack_result == "chain_lightning":
                 # Electrician chain lightning (only on click)
-                self.player.perform_chain_attack(mouse_pos, self.enemy_group, game=self)ntrinsic Ability (Space key) ---
+                self.player.perform_chain_attack(mouse_pos, self.enemy_group, game=self)#ntrinsic Ability (Space key) ---
         intrinsic_cooldown = self.player.get_ability_cooldown(self.player.intrinsic_ability)
         if keys[pygame.K_SPACE] and (self.survival_time - self.player.last_melee) >= intrinsic_cooldown:
             result = self.player.use_ability(self.player.intrinsic_ability, self.survival_time, dir_vec if 'dir_vec' in locals() else pygame.math.Vector2(0,0), mouse_pos)
